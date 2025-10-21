@@ -29,7 +29,7 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row-reverse items-center  justify-around h-[85%] md:h-[90%]  ">
                 {/* Şəkil wrapper */}
                 <div className="text-center flex md:hidden">
-                    <h1 className="text-xl text-white font-semibold">Hello, I'm Sübhan!</h1>
+                    <h1 className="text-xl text-white font-semibold">Hello, Im Sübhan!</h1>
 
                 </div>
 
@@ -72,7 +72,7 @@ export default function HomePage() {
 
                 {/* Boş div / digər content */}
                 <div className="flex flex-col gap-10 p-5 ">
-                    <h1 className="text-xl hidden md:flex text-white  font-semibold">Hello, I'm Sübhan!</h1>
+                    <h1 className="text-xl hidden md:flex text-white  font-semibold">Hello, Im Sübhan!</h1>
 
 
                     <TypingLoopText texts={["Problem Solver ", "React Enthusiast ", "UI Designer "]} />
