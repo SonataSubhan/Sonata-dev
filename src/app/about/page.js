@@ -24,7 +24,7 @@ developer();`
                 {/* Sol tərəf - Mətn və Skills */}
                 <div className="w-full lg:w-1/2 p-4 sm:p-6 lg:p-10 flex flex-col gap-5">
                     <h1 className="text-sm sm:text-md lg:text-lg text-red-300 leading-relaxed">
-                        I'm Sonata-dev, a computer science student exploring diverse fields of technology - from software and web development to artificial intelligence solutions. My goal is to continuously grow my skills and expand my horizons.
+                        Im Sonata-dev, a computer science student exploring diverse fields of technology - from software and web development to artificial intelligence solutions. My goal is to continuously grow my skills and expand my horizons.
                     </h1>
 
                     <h1 className="text-xl sm:text-2xl mt-6 lg:mt-10 text-red-400 font-bold">
