@@ -24,7 +24,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="bg-black  text-white flex justify-between items-center h-[70px] w-screen border-b border-gray-800  px-10 z-20">
+        <nav className="bg-black  text-white flex justify-between items-center h-[70px] w-screen border-b border-white   px-10 z-20">
             <h1 className="text-2xl font-semibold">
                 Sonata<span className="text-red-700">-dev</span>
             </h1>

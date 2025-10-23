@@ -7,17 +7,55 @@ import { motion } from "framer-motion";
 
 export default function HomePage() {
     const icons = [
-        { src: "/giticon.svg", href: "#", alt: "giticon", width: 21, height: 21 },
+        { src: "/giticon.svg", href: "#", alt: "giticon", width: 21, height: 21, },
         { src: "/instaicon.svg", href: "#", alt: "instaicon", width: 21, height: 21 },
         { src: "/whatsappicon.svg", href: "#", alt: "whatsappicon", width: 25, height: 25 },
         { src: "/linkedinicon.svg", href: "#", alt: "linkedinicon", width: 25, height: 25 },
 
     ];
     const orbitIcons = [
-        { icon: <FaReact size={30} color="#61DBFB" />, delay: 0 },
-        { icon: <FaJs size={30} color="#F7DF1E" />, delay: 0.25 },
-        { icon: <FaHtml5 size={30} color="#E44D26" />, delay: 0.5 },
-        { icon: <FaCss3Alt size={30} color="#1572B6" />, delay: 0.75 },
+        {
+            src: "/htmlicon.svg",
+            alt: "htmlicon",
+            radius: 110,
+            duration: 11,
+            direction: -1,
+        },
+        {
+            src: "/cssicon.svg",
+            alt: "cssicon",
+            radius: 150,
+            duration: 11,
+            direction: 1,
+        },
+        {
+            src: "/javascirpticon.svg",
+            alt: "javscripticon",
+            radius: 190,
+            duration: 11,
+            direction: 1,
+        },
+        {
+            src: "/giticon2.svg",
+            alt: "giticon2",
+            radius: 230,
+            duration: 11,
+            direction: -1, // əks istiqamət
+        },
+        {
+            src: "/reacticon.svg",
+            alt: "reacticon",
+            radius: 270,
+            duration: 11,
+            direction: 1, // saat istiqaməti
+        },
+        {
+            src: "/nexticon.svg",
+            alt: "nexticon",
+            radius: 310,
+            duration: 11,
+            direction: -1,
+        },
     ];
 
 
@@ -33,37 +71,44 @@ export default function HomePage() {
 
                 </div>
 
-                <div className="relative w-40 h-40 md:w-60 md:h-60 -z-10 md:z-0 rounded-full 
+                <div className="relative w-40 h-40 md:w-40 md:h-40 -z-10 md:z-0  md:mr-50 rounded-full 
                 border-3 border-yellow-400
-                shadow-[0_0_100px_rgba(234,179,8,1)]
-                hover:shadow-[0_0_150px_rgba(234,179,8,1)]
-                transition-shadow duration-300">
+                shadow-[0_0_100px_yellow]
+                hover:shadow-[0_0_150px_white]
+                transition-all duration-400
+                hover:scale-120">
 
                     <Image
                         src="/profil.jpg"
                         alt="Profile"
                         fill
-                        className="object-cover rounded-full"
+                        className="object-cover rounded-full "
                     />
-
-                    {orbitIcons.map((item, i) => (
+                    {orbitIcons.map((icon, index) => (
                         <motion.div
-                            key={i}
-                            className="absolute top-1/2 left-1/2  z-40 "
+                            key={index}
+                            className="absolute top-1/2 left-1/2"
                             style={{
-                                originX: "0px",
-                                originY: "0px", // radius məsafəsi
+                                width: 50,
+                                height: 50,
+                                marginLeft: -15,
+                                marginTop: -15,
                             }}
-                            animate={{ rotate: 360 }}
+                            animate={{
+                                rotate: icon.direction * 360, // istiqamətə görə
+                            }}
                             transition={{
                                 repeat: Infinity,
                                 ease: "linear",
-                                duration: 8,
-                                delay: item.delay,
+                                duration: icon.duration,
                             }}
                         >
-                            <div className="translate-x-[-400%]  translate-y-[450%]">
-                                {item.icon}
+                            <div
+                                style={{
+                                    transform: `rotate(${index * (200 / icons.length)}deg) translate(${icon.radius}px)`,
+                                }}
+                            >
+                                <Image src={icon.src} className="rounded-full" alt={icon.alt} width={40} height={40} />
                             </div>
                         </motion.div>
                     ))}
