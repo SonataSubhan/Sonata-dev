@@ -38,7 +38,7 @@ const TypingLoopText = ({ texts, typingSpeed = 150, pause = 1000 }) => {
     }, [displayedText, isDeleting, textIndex, texts, typingSpeed, pause]);
 
     return (
-        <div className="text-2xl md:text-5xl text-center md:text-start text-white font-semibold   ">
+        <div className="text-3xl md:text-5xl text-center md:text-start text-white font-semibold   ">
             {displayedText} <span className=" cursor font-bold">|</span>
         </div>
     );

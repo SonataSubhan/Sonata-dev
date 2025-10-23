@@ -2,8 +2,11 @@
 
 export default function Projects() {
     return (
-        <>
-            projects
-        </>
+        <div>
+            <h1></h1>
+            <div>
+
+            </div>
+        </div>
     )
 }
