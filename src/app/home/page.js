@@ -61,7 +61,7 @@ export default function HomePage() {
 
 
     return (
-        <div className="h-screen w-screen pt-[70px] sticky ">
+        <div className="h-screen w-screen pt-[70px] overflow-x-hidden ">
 
 
             <div className="flex flex-col md:flex-row-reverse items-center  justify-around h-[85%] md:h-[90%]  ">
@@ -74,9 +74,9 @@ export default function HomePage() {
                 <div className="relative w-40 h-40 md:w-40 md:h-40 -z-10 md:z-0  md:mr-50 rounded-full 
                 border-3 border-yellow-400
                 shadow-[0_0_100px_yellow]
-                hover:shadow-[0_0_150px_white]
+                hover:shadow-[0_0_150px_yellow]
                 transition-all duration-400
-                hover:scale-120">
+                hover:scale-110">
 
                     <Image
                         src="/profil.jpg"
@@ -87,7 +87,7 @@ export default function HomePage() {
                     {orbitIcons.map((icon, index) => (
                         <motion.div
                             key={index}
-                            className="absolute top-1/2 left-1/2"
+                            className="absolute top-1/2 left-1/2  "
                             style={{
                                 width: 50,
                                 height: 50,
@@ -108,7 +108,7 @@ export default function HomePage() {
                                     transform: `rotate(${index * (200 / icons.length)}deg) translate(${icon.radius}px)`,
                                 }}
                             >
-                                <Image src={icon.src} className="rounded-full" alt={icon.alt} width={40} height={40} />
+                                <Image src={icon.src} className="rounded-full absolute" alt={icon.alt} width={40} height={40} />
                             </div>
                         </motion.div>
                     ))}
@@ -116,7 +116,7 @@ export default function HomePage() {
 
 
                 {/* Boş div / digər content */}
-                <div className="flex flex-col gap-10 py-5 mr-25 ">
+                <div className="flex flex-col gap-10 py-5 px-10 md:px-0 md:mr-25 justify-center ">
                     <h1 className="text-xl hidden md:flex text-white  font-semibold">Hello, Im Sübhan!</h1>
 
 
