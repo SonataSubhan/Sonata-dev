@@ -43,7 +43,7 @@ export default function Navbar() {
                                 {link.label}
                             </Link>
                             <span
-                                className={`absolute left-1/2 -translate-x-1/2 -bottom-1 h-[2px] bg-red-500 transition-all duration-400 ease-linear ${isActive
+                                className={`absolute left-1/2 -translate-x-1/2 -bottom-1 h-[2] bg-red-500 transition-all duration-400 ease-linear ${isActive
                                     ? "w-full opacity-100"
                                     : "group-hover:w-full group-hover:opacity-100 w-0 opacity-0"
                                     }`}

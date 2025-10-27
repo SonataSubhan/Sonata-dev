@@ -17,9 +17,12 @@ export default function About() {
 developer();`
     return (
         <div className="w-full min-h-screen ">
-            <h1 className="md:pt-20 overflow-hidden text-3xl sm:text-4xl lg:text-5xl text-white font-bold text-center px-4">
+            <h1 className="md:pt-20  text-3xl sm:text-4xl lg:text-5xl text-white font-bold text-center px-4">
                 About Me
             </h1>
+            <div
+                className=" w-15 mt-2 md:w-30 mx-auto h-1 bg-red-500 realtive md:mt-5 z-50 "
+            ></div>
 
             <div className="flex flex-col lg:flex-row w-full my-auto p-4 sm:p-6 lg:p-10 gap-6 lg:gap-5 max-w-7xl mx-auto">
                 {/* Sol tərəf - Mətn və Skills */}
