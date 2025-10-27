@@ -22,7 +22,7 @@ export default function Contact() {
                 {/* LEFT SIDE - Desktop */}
                 <div className="hidden lg:flex flex-col gap-5 lg:w-4/7 px-2 sm:px-10 lg:px-20">
                     <h1 className="text-white text-center lg:text-left text-base sm:text-lg leading-relaxed">
-                        Let's collaborate! I'm always open to discussing exciting projects and new opportunities.
+                        Lets collaborate! Im always open to discussing exciting projects and new opportunities.
                     </h1>
 
                     <div className="flex flex-col gap-4 text-sm sm:text-base">
