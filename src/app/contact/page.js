@@ -64,7 +64,7 @@ export default function Contact() {
                     </h1>
 
                     {/* FORM */}
-                    <form className="w-[80%] sm:w-3/4 flex flex-col gap-5 bg-[#1a0000] p-6 rounded-xl shadow-md">
+                    <form className="w-full sm:w-3/4 flex flex-col gap-5 bg-[#1a0000] p-6 rounded-xl shadow-md">
                         <input
                             placeholder="Your Name"
                             className="w-full bg-[#330000] text-white placeholder-gray-400 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B0000]"
