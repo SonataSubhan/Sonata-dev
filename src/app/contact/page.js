@@ -60,7 +60,7 @@ export default function Contact() {
                 <div className="flex lg:hidden flex-col w-full items-center gap-8">
                     {/* TITLE */}
                     <h1 className="text-white text-center text-base sm:text-lg leading-relaxed px-4">
-                        Let's collaborate! I'm always open to discussing exciting projects and new opportunities.
+                        Lets collaborate! Im always open to discussing exciting projects and new opportunities.
                     </h1>
 
                     {/* FORM */}
